@@ -1,0 +1,59 @@
+openapi: 3.0.0
+info:
+  title: Webservice IBISEC
+  version: 1.0.0
+  description: API para obtener actuaciones creadas o modificadas por IBISEC en una fecha concreta.
+servers:
+  - url: http://10.215.84.108/ibisec/
+    description: Servidor del webservice
+paths:
+  /api/actuacionesPorFecha.php:
+    get:
+      tags:
+        - Actuaciones
+      summary: Obtener actuaciones por fecha
+      parameters:
+      - name: fecha
+        in: query
+        required: true
+        schema:
+          type: string
+          format: date
+          example: '2025-08-06'
+        description: Fecha en formato YYYY-MM-DD
+      responses:
+        '200':
+          description: Lista de actuaciones creadas o modificadas en la fecha
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+              example:
+              - codigo_expediente: OBM 109/2018
+                codigo_centro: '07002610'
+                descripcion_larga: Reparacions diverses per humitats al CEIP Can Pastilla,
+                  TM Palma
+                estado: acabat
+                fecha_autorizado: '2018-07-20 00:00:00'
+                importe_pa: '48086.76'
+                fecha_adjudicacion: '2018-09-06 00:00:00'
+                importe_adjudicacion: '48378.87'
+                fecha_publicacion: null
+                plazo_ejecucion: 2 mesos
+                email: null
+                fecha_inicio: null
+                fecha_fin_garantia: null
+                fecha_liquidacion: null
+                fecha_limite_ofertas: null
+                fecha_recepcion: null
+                fecha_retorno_garantia: null
+                responsable: Responsable contracte
+                tipo_contrato: obra
+                autorizacion_urbanistica: comun
+                formalizacion_contrato: true
+                fecha_formalizacion: '2018-09-17 00:00:00'
+                fecha_liquidacion_contrato: null
+                fecha_cierre: null
+                fecha_modificacion: '2025-08-06 08:53:42.511445'

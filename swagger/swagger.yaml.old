@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Webservice integración IBISEC
+  description: API REST para consultar actuaciones por fecha de creación o modificación
+  version: 1.0.0
+servers:
+  - url: http://10.215.84.108/ibisec/api/expedientesPorFecha.php
+paths:
+  /api/expedientesPorFecha.php:
+    get:
+      summary: Obtener actuaciones por fecha
+      description: Devuelve las actuaciones que se crearon o modificaron en una fecha dada.
+      parameters:
+        - in: query
+          name: fecha
+          schema:
+            type: string
+            format: date
+          required: true
+          description: Fecha en formato YYYY-MM-DD
+      responses:
+        '200':
+          description: Lista de actuaciones
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+        '400':
+          description: Petición incorrecta (fecha inválida)
+        '500':
+          description: Error interno del servidor

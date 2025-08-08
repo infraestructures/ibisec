@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "ibisec", "ibisec.phpproj", "{2D2485CA-46BE-F101-B62F-6C910F8F5675}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D2485CA-46BE-F101-B62F-6C910F8F5675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D2485CA-46BE-F101-B62F-6C910F8F5675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D2485CA-46BE-F101-B62F-6C910F8F5675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D2485CA-46BE-F101-B62F-6C910F8F5675}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {822BD79C-26AA-4142-9455-D05715798A9F}
+	EndGlobalSection
+EndGlobal

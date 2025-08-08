@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swagger UI - Webservice de IBISEC</title>
+  <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist/swagger-ui.css" />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+  <div style="text-align:center; margin-bottom:20px;">
+    <img src="../sade.png" alt="Secretaria Autonòmica de Desenvolupament Educatiu" style="max-width:100%; height:auto;">
+  </div>
+  <div id="swagger-ui"></div>
+  <script src="https://unpkg.com/swagger-ui-dist/swagger-ui-bundle.js"></script>
+  <script>
+    const ui = SwaggerUIBundle({
+      url: "swagger.yaml",
+      dom_id: '#swagger-ui',
+    });
+  </script>
+</body>
+</html>
