@@ -31,10 +31,9 @@ paths:
                 items:
                   type: object
               example:
-              - codigo_expediente: OBM 109/2018
+              - codigo_expediente: string
                 codigo_centro: '07002610'
-                descripcion_larga: Reparacions diverses per humitats al CEIP Can Pastilla,
-                  TM Palma
+                descripcion_larga: string
                 estado: acabat
                 fecha_autorizado: '2018-07-20 00:00:00'
                 importe_pa: '48086.76'
@@ -56,4 +55,4 @@ paths:
                 fecha_formalizacion: '2018-09-17 00:00:00'
                 fecha_liquidacion_contrato: null
                 fecha_cierre: null
-                fecha_modificacion: '2025-08-06 08:53:42.511445'
+                fecha_modificacion: '2025-08-06 08:53:42'
